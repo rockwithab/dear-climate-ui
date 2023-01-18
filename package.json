@@ -1,14 +1,15 @@
 {
-    "name": "mantis-free-react-admin-template",
-    "version": "1.1.1",
+    "name": "brock-dear-climate-with-love",
+    "version": "0.1",
     "private": true,
-    "homepage": "https://mantisdashboard.io/free",
+    "homepage": "https://dcwl.io/dcwl",
     "dependencies": {
         "@ant-design/colors": "^6.0.0",
         "@ant-design/icons": "^4.7.0",
         "@emotion/cache": "^11.10.3",
         "@emotion/react": "^11.10.4",
         "@emotion/styled": "^11.10.4",
+        "@mui/icons-material": "^5.11.0",
         "@mui/lab": "^5.0.0-alpha.100",
         "@mui/material": "^5.10.6",
         "@reduxjs/toolkit": "^1.8.5",
@@ -44,10 +45,12 @@
         "yup": "^0.32.11"
     },
     "scripts": {
+        "dev": "yarn prettier-format && yarn start",
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "prettier-format": "prettier --config .prettierrc 'src/**/*.js' --write"
     },
     "eslintConfig": {
         "extends": [
