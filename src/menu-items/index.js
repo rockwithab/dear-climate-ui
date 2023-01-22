@@ -8,7 +8,7 @@ import dcwl from './dcwl';
 // ==============================|| MENU ITEMS ||============================== //
 
 const menuItems = {
-    items: [dcwl, dashboard, pages, utilities, support]
+    items: process.env.NODE_ENV === 'development' ? [dcwl, dashboard, pages, utilities, support] : [dcwl]
 };
 
 export default menuItems;

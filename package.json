@@ -45,10 +45,11 @@
         "yup": "^0.32.11"
     },
     "scripts": {
-        "dev": "yarn prettier-format && yarn start",
-        "start": "react-scripts start",
-        "build": "react-scripts build",
+        "dev": "yarn prettier-format && react-scripts start",
         "test": "react-scripts test",
+        "start": "react-scripts start",
+        "prod": "react-scripts build",
+        "prod_start": "NODE_ENV=production && yarn prod && serve -s build",
         "eject": "react-scripts eject",
         "prettier-format": "prettier --config .prettierrc 'src/**/*.js' --write"
     },

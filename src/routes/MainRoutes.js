@@ -29,7 +29,19 @@ const MainRoutes = {
     children: [
         {
             path: '/',
-            element: <DashboardDefault />
+            element: <DcwlHome />
+        },
+        {
+            path: 'home',
+            element: <DcwlHome />
+        },
+        {
+            path: 'templates',
+            element: <DcwlTemplates />
+        },
+        {
+            path: 'about',
+            element: <DcwlAbout />
         },
         {
             path: 'color',
@@ -59,18 +71,6 @@ const MainRoutes = {
         {
             path: 'icons/ant',
             element: <AntIcons />
-        },
-        {
-            path: 'home',
-            element: <DcwlHome />
-        },
-        {
-            path: 'templates',
-            element: <DcwlTemplates />
-        },
-        {
-            path: 'about',
-            element: <DcwlAbout />
         }
     ]
 };
