@@ -2,7 +2,6 @@
     "name": "brock-dear-climate-with-love",
     "version": "0.1",
     "private": true,
-    "homepage": "https://dcwl.io/dcwl",
     "dependencies": {
         "@ant-design/colors": "^6.0.0",
         "@ant-design/icons": "^4.7.0",
