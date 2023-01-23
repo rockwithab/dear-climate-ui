@@ -1,23 +1,23 @@
 // material-ui
-import { useTheme } from '@mui/material/styles';
+// import { useTheme } from '@mui/material/styles';
 
 /**
  * if you want to use image instead of <svg> uncomment following.
  *
  * import logoDark from 'assets/images/logo-dark.svg';
  */
- import logo from 'assets/images/favicon.ico';
+import logo from 'assets/images/favicon.ico';
 
 // ==============================|| LOGO SVG ||============================== //
 
 const Logo = () => {
-    const theme = useTheme();
+    // const theme = useTheme();
 
     return (
         /**
          * if you want to use image instead of svg uncomment following, and comment out <svg> element.
          */
-         <img src={logo} alt="DCWL" width="100" />
+        <img src={logo} alt="DCWL" width="100" />
         // <>
         //     <svg width="118" height="35" viewBox="0 0 118 35" fill="none" xmlns="http://www.w3.org/2000/svg">
         //         <path
