@@ -1,9 +1,10 @@
 // assets
-import { HomeOutlined, QuestionOutlined } from '@ant-design/icons';
+import { HomeOutlined, FileTextOutlined, QuestionOutlined } from '@ant-design/icons';
 
 // icons
 const icons = {
     HomeOutlined,
+    FileTextOutlined,
     QuestionOutlined
 };
 
@@ -26,7 +27,7 @@ const dcwl = {
             title: 'Templates',
             type: 'item',
             url: '/templates',
-            icon: icons.QuestionOutlined
+            icon: icons.FileTextOutlined
         },
         {
             id: 'dcwl-about',

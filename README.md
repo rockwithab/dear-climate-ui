@@ -1,8 +1,20 @@
-# Mantis Free React Material UI Dashboard Template [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Download%20Mantis%20React%20-%20The%20professional%20Material%20designed%20React%20Admin%20Dashboard%20Template%20&url=https://mantisdashboard.io&via=codedthemes&hashtags=reactjs,webdev,developers,javascript)
+# Dear Climate, With Love
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Price](https://img.shields.io/badge/price-FREE-0098f7.svg)](https://github.com/codedthemes/mantis-free-react-admin-template/blob/main/LICENSE)
-[![GitHub package version](https://img.shields.io/github/package-json/v/codedthemes/mantis-free-react-admin-template)](https://github.com/codedthemes/mantis-free-react-admin-template/)
+
+Dear Climate, With Love is a passion project to bring actionable change in your community using your voice (with a little inspiration)!
+
+## Issues
+
+Please generate a [GitHub issue](https://github.com/rockwithab/dear-climate-with-love/issues) if you find any bugs or want to request an improvement.
+
+## License
+
+Licensed under [MIT](https://github.com/codedthemes/datta-able-bootstrap-dashboard/blob/master/LICENSE)
+
+# Based on Mantis Free React Material UI Dashboard Template
+
+Interested in creating a react website of your own "from scratch?" Dear Climate, With Love is based on the Javascript version of Mantis Free React Material UI Dashboard Template
 
 Mantis is a free and open source React redux dashboard template made using the Material UI React component library with aim of flexibility and better customizability.
 
@@ -102,30 +114,3 @@ yarn start
 ## Author
 
 Mantis is managed by team [CodedThemes](https://codedthemes.com).
-
-## Issues
-
-Please generate a [GitHub issue](https://github.com/codedthemes/mantis-free-react-admin-template/issues) if you found a bug in any version. We are try our best to resolve the issue.
-
-## License
-
--   Licensed under [MIT](https://github.com/codedthemes/datta-able-bootstrap-dashboard/blob/master/LICENSE)
-
-## Checkout free React Material admin dashboard templates
-
--   [Free Materially](https://codedthemes.com/item/materially-free-reactjs-admin-template/)
--   [Free Berry](https://mui.com/store/items/berry-react-material-admin-free/)
-
-## Checkout premium React Material admin dashboard templates
-
--   [Materially](https://codedthemes.com/item/materially-reactjs-admin-dashboard/)
--   [Berry](https://mui.com/store/items/berry-react-material-admin/)
-
-## Follow us
-
--   Website [https://mantisdashboard.io](https://mantisdashboard.io)
--   Blog [https://blog.mantisdashboard.io](https://blog.mantisdashboard.io)
--   CodedThemes [https://codedthemes.com](https://codedthemes.com)
--   Dribbble [https://dribbble.com/codedthemes](https://dribbble.com/codedthemes)
--   Facebook [https://www.facebook.com/codedthemes](https://www.facebook.com/codedthemes)
--   Twitter [https://twitter.com/codedthemes](https://twitter.com/codedthemes)

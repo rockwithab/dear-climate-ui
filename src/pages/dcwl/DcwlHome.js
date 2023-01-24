@@ -22,14 +22,9 @@ const DcwlHome = () => (
                 Dear Climate, With Love has a number of templates that you can download, or take inspiration from, modify to your hearts
                 content, and send to your local representatives or favorite consumer brands.
             </Typography>
-            <Typography variant="body2">
-                There are three simple steps that can make a huge difference in your community and for the planet.
-                <ul>
-                    <li>Download and fill out the template.</li>
-                    <li>Send it out</li>
-                    <li>Tell a friend</li>
-                </ul>
-            </Typography>
+            {/* <Typography variant="body2">
+                There are three simple steps that can make a huge difference in your community and for the planet:
+            </Typography> */}
         </MainCard>
     </MainCard>
 );

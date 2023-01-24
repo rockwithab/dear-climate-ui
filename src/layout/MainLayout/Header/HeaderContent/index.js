@@ -4,9 +4,9 @@ import { GithubOutlined } from '@ant-design/icons';
 
 // project import
 import Search from './Search';
-import Profile from './Profile';
-import Notification from './Notification';
-import MobileSection from './MobileSection';
+// import Profile from './Profile';
+// import Notification from './Notification';
+// import MobileSection from './MobileSection';
 
 // ==============================|| HEADER - CONTENT ||============================== //
 
@@ -20,19 +20,19 @@ const HeaderContent = () => {
 
             <IconButton
                 component={Link}
-                href="https://github.com/codedthemes/mantis-free-react-admin-template"
+                href="https://github.com/rockwithab/dear-climate-with-love"
                 target="_blank"
                 disableRipple
                 color="secondary"
-                title="Download Free Version"
+                title="Dear Climate, With Love"
                 sx={{ color: 'text.primary', bgcolor: 'grey.100' }}
             >
                 <GithubOutlined />
             </IconButton>
 
-            <Notification />
+            {/* <Notification />
             {!matchesXs && <Profile />}
-            {matchesXs && <MobileSection />}
+            {matchesXs && <MobileSection />} */}
         </>
     );
 };

@@ -5,6 +5,8 @@
     "dependencies": {
         "@ant-design/colors": "^6.0.0",
         "@ant-design/icons": "^4.7.0",
+        "@aws-sdk/client-s3": "^3.256.0",
+        "@aws-sdk/credential-providers": "^3.256.0",
         "@emotion/cache": "^11.10.3",
         "@emotion/react": "^11.10.4",
         "@emotion/styled": "^11.10.4",
@@ -29,6 +31,7 @@
         "react-draggable": "^4.4.5",
         "react-element-to-jsx-string": "^15.0.0",
         "react-number-format": "^4.9.4",
+        "react-pdf": "^6.2.2",
         "react-perfect-scrollbar": "^1.5.8",
         "react-redux": "^8.0.4",
         "react-router": "^6.4.1",

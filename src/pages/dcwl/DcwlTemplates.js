@@ -1,7 +1,12 @@
-import * as React from 'react';
+import { useState } from 'react';
+
+//react-pdf
+import { Document, Page } from 'react-pdf/dist/esm/entry.webpack5';
 
 // material-ui
-import { Accordion, AccordionSummary, AccordionDetails, Typography } from '@mui/material';
+import { Accordion, AccordionSummary, AccordionDetails, Typography, IconButton, Link } from '@mui/material';
+import { styled } from '@mui/material/styles';
+import { DownloadOutlined } from '@ant-design/icons';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 // project import
@@ -10,11 +15,22 @@ import MainCard from 'components/MainCard';
 // ==============================|| SAMPLE PAGE ||============================== //
 
 const DcwlTemplates = () => {
-    const [expanded, setExpanded] = React.useState(false);
+    const [expanded, setExpanded] = useState(false);
 
     const handleChange = (panel) => (event, isExpanded) => {
         setExpanded(isExpanded ? panel : false);
     };
+
+    const LEAF_BLOWER_TEMPLATE_LINK = 'https://dcwl-templates-public.s3.us-east-2.amazonaws.com/Leaf-Blower-Template-v2.pdf';
+
+    const SPRINKLER_TEMPLATE_LINK =
+        'https://dcwl-templates-public.s3.us-east-2.amazonaws.com/Sprinkler-And-Lawn-Management-Template-v1.pdf';
+
+    const COMMUNITY_GREEN_SPACE_TEMPLATE_LINK =
+        'https://dcwl-templates-public.s3.us-east-2.amazonaws.com/Community-Green-Space-Template-v1.pdf';
+
+    const SUSTAINABLE_PACKAGING_TEMPLATE_LINK =
+        'https://dcwl-templates-public.s3.us-east-2.amazonaws.com/Sustainable-Packaging-Template-v1.pdf';
 
     return (
         <MainCard>
@@ -29,59 +45,119 @@ const DcwlTemplates = () => {
             <MainCard>
                 <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                     <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1bh-content" id="panel1bh-header">
-                        <Typography>Template 1</Typography>
+                        <AccordionHeader>
+                            <AccordionHeaderTypography>Leaf Blower Template</AccordionHeaderTypography>
+                            <AccordionHeaderButton
+                                component={Link}
+                                href={LEAF_BLOWER_TEMPLATE_LINK}
+                                target="_blank"
+                                disableRipple
+                                color="secondary"
+                                title="Leaf Blower Template"
+                                sx={{ color: 'text.primary', bgcolor: 'grey.100' }}
+                            >
+                                <DownloadOutlined />
+                            </AccordionHeaderButton>
+                        </AccordionHeader>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <Typography>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat. Mauris sit amet massa
-                            vitae. Varius duis at consectetur lorem donec massa sapien faucibus. Commodo nulla facilisi nullam vehicula
-                            ipsum a arcu cursus. Libero volutpat sed cras ornare arcu dui vivamus arcu. Mi eget mauris pharetra et ultrices.
-                            Vel risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Sodales neque sodales ut etiam.
-                            Phasellus vestibulum lorem sed risus ultricies tristique. Dui ut ornare lectus sit amet est. Risus sed vulputate
-                            odio ut enim blandit. Vel pretium lectus quam id.
-                        </Typography>
+                        <Document file={LEAF_BLOWER_TEMPLATE_LINK}>
+                            <Page pageNumber={1} renderTextLayer={false} renderAnnotationLayer={false} />
+                        </Document>
                     </AccordionDetails>
                 </Accordion>
             </MainCard>
             <MainCard>
                 <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
                     <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel2bh-content" id="panel2bh-header">
-                        <Typography>Template 2</Typography>
+                        <AccordionHeader>
+                            <AccordionHeaderTypography>Sprinkler And Lawn-Management Template</AccordionHeaderTypography>
+                            <AccordionHeaderButton
+                                component={Link}
+                                href={SPRINKLER_TEMPLATE_LINK}
+                                target="_blank"
+                                disableRipple
+                                color="secondary"
+                                title="Sprinkler And Lawn-Management Template"
+                                sx={{ color: 'text.primary', bgcolor: 'grey.100' }}
+                            >
+                                <DownloadOutlined />
+                            </AccordionHeaderButton>
+                        </AccordionHeader>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <Typography>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat. Mauris sit amet massa
-                            vitae. Varius duis at consectetur lorem donec massa sapien faucibus. Commodo nulla facilisi nullam vehicula
-                            ipsum a arcu cursus. Libero volutpat sed cras ornare arcu dui vivamus arcu. Mi eget mauris pharetra et ultrices.
-                            Vel risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Sodales neque sodales ut etiam.
-                            Phasellus vestibulum lorem sed risus ultricies tristique. Dui ut ornare lectus sit amet est. Risus sed vulputate
-                            odio ut enim blandit. Vel pretium lectus quam id.
-                        </Typography>
+                        <Document file={SPRINKLER_TEMPLATE_LINK}>
+                            <Page pageNumber={1} renderTextLayer={false} renderAnnotationLayer={false} />
+                        </Document>
                     </AccordionDetails>
                 </Accordion>
             </MainCard>
             <MainCard>
                 <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
                     <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel3bh-content" id="panel3bh-header">
-                        <Typography>Template 3</Typography>
+                        <AccordionHeader>
+                            <AccordionHeaderTypography>Community Green Space Template</AccordionHeaderTypography>
+                            <AccordionHeaderButton
+                                component={Link}
+                                href={COMMUNITY_GREEN_SPACE_TEMPLATE_LINK}
+                                target="_blank"
+                                disableRipple
+                                color="secondary"
+                                title="Community Green Space Template"
+                                sx={{ color: 'text.primary', bgcolor: 'grey.100' }}
+                            >
+                                <DownloadOutlined />
+                            </AccordionHeaderButton>
+                        </AccordionHeader>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <Typography>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat. Mauris sit amet massa
-                            vitae. Varius duis at consectetur lorem donec massa sapien faucibus. Commodo nulla facilisi nullam vehicula
-                            ipsum a arcu cursus. Libero volutpat sed cras ornare arcu dui vivamus arcu. Mi eget mauris pharetra et ultrices.
-                            Vel risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Sodales neque sodales ut etiam.
-                            Phasellus vestibulum lorem sed risus ultricies tristique. Dui ut ornare lectus sit amet est. Risus sed vulputate
-                            odio ut enim blandit. Vel pretium lectus quam id.
-                        </Typography>
+                        <Document file={COMMUNITY_GREEN_SPACE_TEMPLATE_LINK}>
+                            <Page pageNumber={1} renderTextLayer={false} renderAnnotationLayer={false} />
+                        </Document>
+                    </AccordionDetails>
+                </Accordion>
+            </MainCard>
+            <MainCard>
+                <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
+                    <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel4bh-content" id="panel4bh-header">
+                        <AccordionHeader>
+                            <AccordionHeaderTypography>Sustainable Packaging Template</AccordionHeaderTypography>
+                            <AccordionHeaderButton
+                                component={Link}
+                                href={SUSTAINABLE_PACKAGING_TEMPLATE_LINK}
+                                target="_blank"
+                                disableRipple
+                                color="secondary"
+                                title="Sustainable Packaging Template"
+                                sx={{ color: 'text.primary', bgcolor: 'grey.100' }}
+                            >
+                                <DownloadOutlined />
+                            </AccordionHeaderButton>
+                        </AccordionHeader>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <Document file={SUSTAINABLE_PACKAGING_TEMPLATE_LINK}>
+                            <Page pageNumber={1} renderTextLayer={false} renderAnnotationLayer={false} />
+                        </Document>
                     </AccordionDetails>
                 </Accordion>
             </MainCard>
         </MainCard>
     );
 };
+
+const AccordionHeader = styled('div')(() => ({
+    display: 'flex'
+}));
+
+const AccordionHeaderTypography = styled(Typography)(() => ({
+    display: 'flex',
+    alignItems: 'center'
+}));
+
+const AccordionHeaderButton = styled(IconButton)(() => ({
+    display: 'flex',
+    marginLeft: '1em'
+}));
 
 export default DcwlTemplates;
