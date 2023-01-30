@@ -6,7 +6,7 @@ Dear Climate, With Love is a passion project to bring actionable change in your 
 
 ## Issues
 
-Please generate a [GitHub issue](https://github.com/rockwithab/dear-climate-with-love/issues) if you find any bugs or want to request an improvement.
+Please generate a [GitHub issue](https://github.com/rockwithab/dear_climate_with_love/issues) if you find any bugs or want to request an improvement.
 
 ## License
 

@@ -20,7 +20,7 @@ const HeaderContent = () => {
 
             <IconButton
                 component={Link}
-                href="https://github.com/rockwithab/dear-climate-with-love"
+                href="https://github.com/rockwithab/dear_climate_with_love"
                 target="_blank"
                 disableRipple
                 color="secondary"
