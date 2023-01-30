@@ -1,6 +1,8 @@
 import { useState } from 'react';
 
 //react-pdf
+import { pdfjs } from 'react-pdf';
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack5';
 
 // material-ui
