@@ -5,8 +5,6 @@
     "dependencies": {
         "@ant-design/colors": "^6.0.0",
         "@ant-design/icons": "^4.7.0",
-        "@aws-sdk/client-s3": "^3.256.0",
-        "@aws-sdk/credential-providers": "^3.256.0",
         "@emotion/cache": "^11.10.3",
         "@emotion/react": "^11.10.4",
         "@emotion/styled": "^11.10.4",
