@@ -23,16 +23,15 @@ const DcwlTemplates = () => {
         setExpanded(isExpanded ? panel : false);
     };
 
-    const LEAF_BLOWER_TEMPLATE_LINK = 'https://dcwl-templates-public.s3.us-east-2.amazonaws.com/Leaf-Blower-Template-v2.pdf';
+    const LEAF_BLOWER_TEMPLATE_LINK = 'https://dcwl-templates-public.s3.us-east-2.amazonaws.com/Leaf-Blower-Template.pdf';
 
-    const SPRINKLER_TEMPLATE_LINK =
-        'https://dcwl-templates-public.s3.us-east-2.amazonaws.com/Sprinkler-And-Lawn-Management-Template-v1.pdf';
+    const SPRINKLER_TEMPLATE_LINK = 'https://dcwl-templates-public.s3.us-east-2.amazonaws.com/Sprinkler-And-Lawn-Management-Template.pdf';
 
     const COMMUNITY_GREEN_SPACE_TEMPLATE_LINK =
-        'https://dcwl-templates-public.s3.us-east-2.amazonaws.com/Community-Green-Space-Template-v1.pdf';
+        'https://dcwl-templates-public.s3.us-east-2.amazonaws.com/Community-Green-Space-Template.pdf';
 
     const SUSTAINABLE_PACKAGING_TEMPLATE_LINK =
-        'https://dcwl-templates-public.s3.us-east-2.amazonaws.com/Sustainable-Packaging-Template-v1.pdf';
+        'https://dcwl-templates-public.s3.us-east-2.amazonaws.com/Sustainable-Packaging-Template.pdf';
 
     return (
         <MainCard>
