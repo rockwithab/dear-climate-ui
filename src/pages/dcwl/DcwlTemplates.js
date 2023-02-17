@@ -33,6 +33,9 @@ const DcwlTemplates = () => {
     const SUSTAINABLE_PACKAGING_TEMPLATE_LINK =
         'https://dcwl-templates-public.s3.us-east-2.amazonaws.com/Sustainable-Packaging-Template.pdf';
 
+    const RESTAURANT_TAKE_OUT_PACKAGING_TEMPLATE_LINK =
+        'https://dcwl-templates-public.s3.us-east-2.amazonaws.com/Restaurant-Take-Out-Packaging-Template.pdf';
+
     return (
         <MainCard>
             <MainCard title="DCWL Templates">
@@ -138,6 +141,31 @@ const DcwlTemplates = () => {
                     </AccordionSummary>
                     <AccordionDetails>
                         <Document file={SUSTAINABLE_PACKAGING_TEMPLATE_LINK}>
+                            <Page pageNumber={1} renderTextLayer={false} renderAnnotationLayer={false} />
+                        </Document>
+                    </AccordionDetails>
+                </Accordion>
+            </MainCard>
+            <MainCard>
+                <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
+                    <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel5bh-content" id="panel5bh-header">
+                        <AccordionHeader>
+                            <AccordionHeaderTypography>Restaurant Take Out Packaging Template</AccordionHeaderTypography>
+                            <AccordionHeaderButton
+                                component={Link}
+                                href={RESTAURANT_TAKE_OUT_PACKAGING_TEMPLATE_LINK}
+                                target="_blank"
+                                disableRipple
+                                color="secondary"
+                                title="Restaurant Take Out Packaging Template"
+                                sx={{ color: 'text.primary', bgcolor: 'grey.100' }}
+                            >
+                                <DownloadOutlined />
+                            </AccordionHeaderButton>
+                        </AccordionHeader>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <Document file={RESTAURANT_TAKE_OUT_PACKAGING_TEMPLATE_LINK}>
                             <Page pageNumber={1} renderTextLayer={false} renderAnnotationLayer={false} />
                         </Document>
                     </AccordionDetails>
