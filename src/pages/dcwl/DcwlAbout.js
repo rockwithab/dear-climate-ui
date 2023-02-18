@@ -21,6 +21,10 @@ const DcwlAbout = () => (
                 <a href="https://github.com/rockwithab/dear_climate_with_love">@rockwithab</a>
             </Typography>
         </MainCard>
+        {/* <MainCard title="Mission">
+            <Typography variant="body2">
+            </Typography>
+        </MainCard> */}
     </MainCard>
 );
 
