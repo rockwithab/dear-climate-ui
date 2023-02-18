@@ -13,7 +13,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 // project import
 import MainCard from 'components/MainCard';
-import { DCWL_TEMPLATES } from './DcwlTemplateLinks.js';
+import { DCWL_TEMPLATES } from 'templates/DcwlTemplateLinks.js';
 
 // ==============================|| SAMPLE PAGE ||============================== //
 
