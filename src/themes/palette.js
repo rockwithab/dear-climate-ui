@@ -50,8 +50,10 @@ const Palette = (mode) => {
             },
             divider: paletteColor.grey[200],
             background: {
-                paper: paletteColor.grey[0],
-                default: paletteColor.grey.A50
+                // paper: paletteColor.grey[0],
+                // default: paletteColor.grey.A50
+                paper: paletteColor.primary.light,
+                default: paletteColor.primary.main
             }
         }
     });
