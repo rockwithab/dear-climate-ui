@@ -53,6 +53,8 @@ const Theme = (colors) => {
             A300: greyColors.A700,
             contrastText: greyColors[0]
         },
+        dcwlPrimary: {},
+        dcwlSecondary: {},
         error: {
             lighter: red[0],
             light: red[2],
