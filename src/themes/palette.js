@@ -28,10 +28,14 @@ const Palette = (mode) => {
     const greyAscent = ['#fafafa', '#bfbfbf', '#434343', '#1f1f1f'];
     const greyConstant = ['#fafafb', '#e6ebf1'];
 
+    const tan = ['#eedec7'];
     colors.grey = [...greyPrimary, ...greyAscent, ...greyConstant];
+    colors.tan = [...tan];
 
     const paletteColor = ThemeOption(colors);
 
+    //rgb(238, 222, 199)
+    //#EEDEC7
     return createTheme({
         palette: {
             mode,
@@ -52,7 +56,7 @@ const Palette = (mode) => {
             background: {
                 // paper: paletteColor.grey.A50,
                 // default: paletteColor.primary[200]
-                paper: paletteColor.warning.light,
+                paper: '#eedec7',
                 default: paletteColor.success.light
                 //default: paletteColor.primary[200]
             }
