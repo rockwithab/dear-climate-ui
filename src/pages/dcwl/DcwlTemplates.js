@@ -29,26 +29,24 @@ const DcwlTemplates = () => {
         templateCards.push(
             <MainCard>
                 <Accordion expanded={expanded === `panel${i + 1}`} onChange={handleChange(`panel${i + 1}`)}>
-                    <AccordionSummary
+                    <AccordionHeader
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls={`panel${i + 1}bh-content`}
                         id={`panel${i + 1}bh-header`}
                     >
-                        <AccordionHeader>
-                            <AccordionHeaderTypography>{DCWL_TEMPLATES[i].title}</AccordionHeaderTypography>
-                            <AccordionHeaderButton
-                                component={Link}
-                                href={DCWL_TEMPLATES[i].doc}
-                                target="_blank"
-                                disableRipple
-                                color="secondary"
-                                title={DCWL_TEMPLATES[i].title}
-                                sx={{ color: 'text.primary', bgcolor: 'grey.100' }}
-                            >
-                                <DownloadOutlined />
-                            </AccordionHeaderButton>
-                        </AccordionHeader>
-                    </AccordionSummary>
+                        <AccordionHeaderTypography>{DCWL_TEMPLATES[i].title}</AccordionHeaderTypography>
+                        <AccordionHeaderButton
+                            component={Link}
+                            href={DCWL_TEMPLATES[i].doc}
+                            target="_blank"
+                            disableRipple
+                            color="secondary"
+                            title={DCWL_TEMPLATES[i].title}
+                            sx={{ color: 'text.primary', bgcolor: 'grey.100' }}
+                        >
+                            <DownloadOutlined />
+                        </AccordionHeaderButton>
+                    </AccordionHeader>
                     <AccordionDetails>
                         <Document file={DCWL_TEMPLATES[i].pdf}>
                             <Page pageNumber={1} renderTextLayer={false} renderAnnotationLayer={false} />
@@ -73,9 +71,14 @@ const DcwlTemplates = () => {
     );
 };
 
-const AccordionHeader = styled('div')(() => ({
-    display: 'flex'
-}));
+const AccordionHeader = styled(AccordionSummary)`
+    display: flex;
+
+    & .MuiAccordionSummary-content {
+        justify-content: space-between;
+        margin-right: 1em;
+    }
+`;
 
 const AccordionHeaderTypography = styled(Typography)(() => ({
     display: 'flex',
