@@ -38,7 +38,7 @@ const DcwlTemplates = () => {
                             <AccordionHeaderTypography>{DCWL_TEMPLATES[i].title}</AccordionHeaderTypography>
                             <AccordionHeaderButton
                                 component={Link}
-                                href={DCWL_TEMPLATES[i].link}
+                                href={DCWL_TEMPLATES[i].doc}
                                 target="_blank"
                                 disableRipple
                                 color="secondary"
@@ -50,7 +50,7 @@ const DcwlTemplates = () => {
                         </AccordionHeader>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <Document file={DCWL_TEMPLATES[i].link}>
+                        <Document file={DCWL_TEMPLATES[i].pdf}>
                             <Page pageNumber={1} renderTextLayer={false} renderAnnotationLayer={false} />
                         </Document>
                     </AccordionDetails>
