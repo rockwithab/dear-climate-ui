@@ -44,9 +44,8 @@ const DcwlHome = () => (
                                 and save it for sending or printing.
                             </li>
                             <li>
-                                <b>Download:</b> Some of our templates may offer a download option, allowing you to save the letter as a PDF
-                                or Word document. This makes it easy to print, attach to an email, or upload to a recipient's online
-                                submission portal.
+                                <b>Download:</b> Our templates offer a download option, allowing you to save the letter as a text document.
+                                This makes it easy to print, attach to an email, or upload to a recipient's online submission portal.
                             </li>
                             <li>
                                 <b>Hand-write:</b> For a more personal touch, consider hand-writing the letter using the template as a
