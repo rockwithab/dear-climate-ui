@@ -78,6 +78,10 @@ const AccordionHeader = styled(AccordionSummary)`
         justify-content: space-between;
         margin-right: 1em;
     }
+
+    & .MuiPaper-root {
+        background-color: 'F8F8FF';
+    }
 `;
 
 const AccordionHeaderTypography = styled(Typography)(() => ({

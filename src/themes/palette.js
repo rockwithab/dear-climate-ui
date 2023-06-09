@@ -56,8 +56,11 @@ const Palette = (mode) => {
             background: {
                 // paper: paletteColor.grey.A50,
                 // default: paletteColor.primary[200]
-                paper: '#eedec7',
-                default: paletteColor.success.light
+                // paper: '#eedec7', // tan
+                paper: '#e9e7ce', // beige
+                // paper: '#F8F8FF', // cloud white
+                // default: paletteColor.success.light
+                default: '#abb26d' // khaki green
                 //default: paletteColor.primary[200]
             }
         }
