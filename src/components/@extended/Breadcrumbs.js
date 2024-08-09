@@ -75,7 +75,7 @@ const Breadcrumbs = ({ navigation, title, ...others }) => {
             breadcrumbContent = (
                 <MainCard border={false} sx={{ mb: 3, bgcolor: 'transparent' }} {...others} content={false}>
                     <Grid container direction="column" justifyContent="flex-start" alignItems="flex-start" spacing={1}>
-                        <Grid item>
+                        {/* <Grid item>
                             <MuiBreadcrumbs aria-label="breadcrumb">
                                 <Typography component={Link} to="/" color="textSecondary" variant="h6" sx={{ textDecoration: 'none' }}>
                                     Home
@@ -83,7 +83,7 @@ const Breadcrumbs = ({ navigation, title, ...others }) => {
                                 {mainContent}
                                 {itemContent}
                             </MuiBreadcrumbs>
-                        </Grid>
+                        </Grid> */}
                         {title && (
                             <Grid item sx={{ mt: 2 }}>
                                 <Typography variant="h5">{item.title}</Typography>

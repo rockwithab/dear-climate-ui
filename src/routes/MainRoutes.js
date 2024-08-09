@@ -20,6 +20,8 @@ const AntIcons = Loadable(lazy(() => import('pages/components-overview/AntIcons'
 const DcwlHome = Loadable(lazy(() => import('pages/dcwl/DcwlHome')));
 const DcwlTemplates = Loadable(lazy(() => import('pages/dcwl/DcwlTemplates')));
 const DcwlAbout = Loadable(lazy(() => import('pages/dcwl/DcwlAbout')));
+const DcwlResources = Loadable(lazy(() => import('pages/dcwl/DcwlResources')));
+const DcwlCan = Loadable(lazy(() => import('pages/dcwl/DcwlCan')));
 
 // ==============================|| MAIN ROUTING ||============================== //
 
@@ -42,6 +44,14 @@ const MainRoutes = {
         {
             path: 'about',
             element: <DcwlAbout />
+        },
+        {
+            path: 'can',
+            element: <DcwlCan />
+        },
+        {
+            path: 'resources',
+            element: <DcwlResources />
         },
         {
             path: 'color',

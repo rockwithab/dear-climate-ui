@@ -9,12 +9,9 @@ import MainCard from 'components/MainCard';
 const DcwlAbout = () => (
     <MainCard>
         <MainCard title="DCWL About">
-            <Typography variant="body1">
-                Our mission is to empower individuals to effectively communicate their concerns and ideas for addressing climate change by
-                providing accessible, well-crafted, and impactful letter templates. We aim to foster a culutre of active participation in
-                environmental conversations and advocate for sustainable practices by making it easier for people to engage with companies
-                and local communities. Through collaboration and awareness, we strive to transform the way we approach climate change, one
-                letter at a time.
+            <Typography variant="body1" sx={{ paddingBottom: 5 }}>
+                My mission is to empower individuals to effectively communicate their concerns and ideas for addressing climate change by
+                providing resources and guidance wherever you are in your climate journey.
             </Typography>
             <Typography variant="body2">
                 Dear Climate, With Love is a passion project brought to you by{' '}
